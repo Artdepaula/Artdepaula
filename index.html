@@ -1,0 +1,81 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Pass - Leonardo de Paula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VIP Pass - Leonardo de Paula</h1>
+        <p>Seja um membro exclusivo e aproveite benefícios únicos!</p>
+    </header>
+
+    <section id="benefits">
+        <h2>Benefícios Exclusivos</h2>
+        <p>Ao se tornar membro do VIP Pass, você terá acesso a:</p>
+        <ul>
+            <li>Descontos em todas as tatuagens</li>
+            <li>Flash Days exclusivos</li>
+            <li>Retoques gratuitos</li>
+            <li>Consultoria de arte personalizada</li>
+            <li>Conteúdo exclusivo mensal</li>
+            <li>Sorteios e prêmios especiais</li>
+        </ul>
+    </section>
+
+    <section id="levels">
+        <h2>Escolha Seu Plano</h2>
+        <div class="level bronze">
+            <h3>VIP Pass - Bronze</h3>
+            <p>Desconto de 10% nas tatuagens</p>
+            <p>Retoque gratuito uma vez por ano</p>
+            <p>Flash Day exclusivo</p>
+            <p><strong>R$ 49,90/mês</strong></p>
+        </div>
+        <div class="level silver">
+            <h3>VIP Pass - Prata</h3>
+            <p>Desconto de 15% nas tatuagens</p>
+            <p>Consultoria de arte personalizada a cada 6 meses</p>
+            <p>Retoque gratuito anual</p>
+            <p><strong>R$ 89,90/mês</strong></p>
+        </div>
+        <div class="level gold">
+            <h3>VIP Pass - Ouro</h3>
+            <p>Desconto de 20% nas tatuagens</p>
+            <p>Consultoria de arte trimestral</p>
+            <p>Tatuagem de pequeno porte gratuita após 12 meses</p>
+            <p><strong>R$ 149,90/mês</strong></p>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Inscreva-se Agora!</h2>
+        <p>Preencha o formulário abaixo para se inscrever e garantir sua vaga no VIP Pass.</p>
+        <form id="subscriptionForm" onsubmit="handleSubmit(event)">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="plan">Escolha o Plano:</label>
+            <select id="plan" name="plan">
+                <option value="bronze">VIP Pass - Bronze</option>
+                <option value="silver">VIP Pass - Prata</option>
+                <option value="gold">VIP Pass - Ouro</option>
+            </select>
+            
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Leonardo de Paula - Todos os Direitos Reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
